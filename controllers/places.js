@@ -1,6 +1,7 @@
 const router = require('express').Router()
 const places = require('../models/places.js')
 
+// GET /places/index
 router.get('/', (req, res) => {
   res.render('places/index', { places })
 })
